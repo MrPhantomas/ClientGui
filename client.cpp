@@ -27,7 +27,7 @@ Client::Client(QString projectName,QObject *parent) :
     //Создания листа данных соединений
     lst = new QList<connections*>;
     _udpSocket = new QUdpSocket(this);
-    _udpSocket->bind(QHostAddress::Any);
+    _udpSocket->bind(QHostAddress::Any, defUdpCLientPort);
     broadcastTimer = new QTimer();
     broadcastTimer->setInterval(2000);
     connect(broadcastTimer, SIGNAL(timeout()), this, SLOT(broadcastUdpResponse()));

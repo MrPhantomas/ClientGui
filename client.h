@@ -19,6 +19,10 @@
 #define defUdpServerPort 50002
 //Порт tcp сервера по умолчанию
 #define defTcpServerPort 50003
+//Порт udp клиента по умолчанию
+#define defUdpCLientPort 50001
+//Порт tcp клиента по умолчанию
+#define defTcpCLientPort 50004
 
 //Папка с картинками по умолчанию
 #define imagePathDef "Images"
